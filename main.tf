@@ -4,7 +4,7 @@ module "root_testmay26" {
   vpc_cidr    = "10.0.0.0/16"
   name_prefix = "pht-dev"
 
-  vpc_region = "eu-north-1"
+  vpc_region = var.vpc_region
 
   public_subnet_count  = 2
   private_subnet_count = 2
